@@ -1,13 +1,13 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
 import { HashLoader } from 'react-spinners';
-import Home from "./components/Home"
-import Sidebar from "./components/Sidebar"
 import {
   BrowserRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
+import Sidebar from './components/sidebar/Sidebar';
+import Home from "./components/Home/Home"
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -22,11 +22,12 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <div className='loader'>
+        <div className="loader">
           <HashLoader size={130} color={"#8CD736"} loading={loading} />
         </div>
       ) : (
         <>
+          <Sidebar />
           <Home />
         </>
       )}
