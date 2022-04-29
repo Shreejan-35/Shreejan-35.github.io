@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/sidebar.css"
-import {FaHome} from "react-icons/fa"
+import "../css/sidebar.css";
+import { FaHome } from "react-icons/fa";
 import { BiRightArrow, BiMessageAltDetail } from "react-icons/bi";
-import {AiOutlineFundProjectionScreen} from "react-icons/ai"
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 function Sidebar() {
   return (

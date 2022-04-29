@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
-.navbar{
+.navbar {
+    z-index: 1;
     
     position: fixed;
     background-color: #2f4850;
     transition: width 200ms ease-in-out;
 }
 
-.navbar-nav{
+.navbar-nav {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -16,16 +17,16 @@
     align-items: center;
 }
 
-.nav-item{
+.nav-item {
     width: 100%;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     background-color: #426b78;
     transition: background-color 200ms ease-in-out;
 }
 
-.nav-link{
+.nav-link {
     display: flex;
     align-items: center;
     height: 5rem;
@@ -33,25 +34,26 @@
     text-decoration: none;
 }
 
-.link-text{
+.link-text {
     display: none;
     margin-left: 1rem;
 }
 
-.nav-link .icon{
+.nav-link .icon {
     min-width: 2rem;
     margin: 0 1.5rem;
+    
 }
 
-.navbar:hover{
+.navbar:hover {
     width: 16rem;
 }
 
-.navbar:hover .link-text{
+.navbar:hover .link-text {
     display: block;
 }
 
-.logo{
+.logo {
     font-weight: bold;
     margin-bottom: 1rem;
     text-align: center;
@@ -60,18 +62,18 @@
     width: 100%;
 }
 
-.link-text{
+.link-text {
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.logo .link-text{
+.logo .link-text {
     font-size: 2.5rem;
     font-family: 'Ms Madi',
-    cursive;
+        cursive;
 }
 
-.logo .icon{
+.logo .icon {
     transform: rotate(0deg);
     transition: transform 600ms;
 }
@@ -80,50 +82,50 @@
     transform: rotate(-180deg);
 }
 
-#home-icon{
+#home-icon {
     color: yellow;
 }
 
-#projects-icon{
+#projects-icon {
     color: rgb(242, 7, 132);
 }
 
-#contact-icon{
+#contact-icon {
     color: aqua;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .navbar {
         bottom: 0;
         width: 100vw;
         height: 5rem;
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         flex-direction: row;
     }
 
-    .nav-link{
+    .nav-link {
         justify-content: center;
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .navbar{
+    .navbar {
         top: 0;
         width: 5rem;
         height: 100vh;
     }
 
-    .navbar:hover{
+    .navbar:hover {
         width: 16rem;
     }
 
-    .navbar:hover .link-text{
+    .navbar:hover .link-text {
         display: inline;
         transform: opacity 600ms;
     }
